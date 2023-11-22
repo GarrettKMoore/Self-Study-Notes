@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[margin=1in]{geometry}
+\usepackage[numbers]{natbib}
+\usepackage{amsmath}
+\bibliographystyle{plainnat}
+
+\title{Basic Mathematics \cite{lang}}
+\author{Garrett Moore}
+\date{November 2023}
+
+\renewcommand{\bibsection}{}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+\section*{Chapter 1: Numbers}
+\subsection*{Section 1.1: The Integers}
+
+\newpage
+\subsection*{Section 1.2: Rules for Addition}
+\subsubsection*{Practice}
+Justify each step, using commutativity and associativity in proving the following identities.\\
+1. $(a + b) + (c + d) = (a + d) + (b + c)$\\
+Answer:\\
+\begin{align*}
+    (a+b)+(c+d) &= a + b + c + d \hspace{3cm}\text{by associativity}\\
+    &= a + d + b + c \hspace{3cm} \text{by commutativity}\\
+    &= (a + d) + (b + c) \hspace{3cm} \text{by associativity}\\
+\end{align*}
+
+\noindent 3. $(a - b) + (c - d) = (a + c) + (-b - d)$\\
+Answer:\\
+\begin{align*}
+    (a - b) + (c - d) &= a - b + c - d \hspace{3cm}\text{by associativity}\\
+    &= a + c - b - d \hspace{3cm} \text{by commutativity}\\
+    &= (a + c) + (-b - d) \hspace{3cm} \text{by associativity}\\
+\end{align*}
+
+\noindent 5. $(a - b) + (c - d) = (a - d) + (c - b)$\\
+Answer:\\
+\begin{align*}
+    (a - b) + (c - d) &= a - b + c - d \hspace{3cm} \text{by associativity}\\
+    &= a - d + c - b \hspace{3cm} \text{by commutativity}\\
+    &= (a - d) + (c - b) \hspace{3cm} \text{by associativity}\\
+\end{align*}
+
+\noindent 7. $(a - b) + (c - d) = -(b + d) - (-a - c)$\\
+Answer:\\
+\begin{align*}
+    (a - b) + (c - d) &= a - b + c - d \hspace{3cm} \text{by associativity}\\
+    &= -b - d + a + c \hspace{3cm} \text{by commutativity}\\
+    &= -(b + d) - (-a - c)
+\end{align*}
+
+
+
+\newpage
+\section*{References}
+\bibliography{bibfile}
+    
+
+\end{document}
